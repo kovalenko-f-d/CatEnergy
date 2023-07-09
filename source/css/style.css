@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"), url(../../fonts/oswaldmedium.woff2) format("woff2"), url(../../fonts/ArialRegular.woff) format("woff"), url(../../fonts/ArialИщдв.woff) format("woff"), url(../../fonts/oswaldregular.woff2) format("woff2");
+}
+.page-header {
+  background-color: #ffffff;
+}
+.page-header__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0 auto;
+}
+.page-header__logo {
+  padding-left: 20px;
+}
+.page-header__logo-title {
+  padding-left: 57px;
+}
+.main-nav {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 320px;
+}
+.site-list {
+  width: 320px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.site-list__item {
+  margin: 0 auto;
+}
+/*Тестовое*/
+.site-list__link {
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 24px;
+}
+.site-list__link:hover {
+  opacity: 0.6;
+}
+.site-list__link:active {
+  opacity: 0.3;
+}
+.site-list__link--current {
+  border-bottom: 2px solid #68B738;
+}
+.programm-select {
+  background-color: #68B738;
+  background-image: url("../../img/index-background-desktop.jpg");
+}
+.programm-select__wrapper {
+  margin: 0 auto;
+}
+.programm-select__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+.programm-select__intro {
+  color: #ffffff;
+  line-height: 14px;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.programm-select__image {
+  margin: 0 auto;
+}
+.button {
+  background-color: #68B738;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.diets-type__list {
+  list-style-type: none;
+}
+.card-diet {
+  background-color: #f2f2f2;
+}
+.card-diet__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.card-diet__description {
+  font-family: "Arial", sans-serif;
+}
+.card-diet__link {
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Oswald", sans-serif;
+}
+.about-diets__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.about-diets__list {
+  list-style-type: none;
+}
+.example-results {
+  background-color: #eaeaea;
+}
+.example-results__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+}
+.stats {
+  list-style-type: none;
+}
+.contacts__intro {
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.contacts__address {
+  line-height: 20px;
+}
+.site-link {
+  text-decoration: none;
+}
+.site-link__title {
+  font-size: 16px;
+  color: #444444;
+}
+.site-link__title-first {
+  text-transform: uppercase;
+}
+.index-body {
+  background-color: #ffffff;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*# sourceMappingURL=style.css.map */
