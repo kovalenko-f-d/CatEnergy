@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="form-body">
   <header class="page-header">
     <a class="page-header__logo" href="#">
       <svg class="page-header__logo-image" width="34" height="38" viewBox="0 0 34 38" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,13 +82,13 @@
             <li class="user-info__item">
               <label class="user-info__field">
                 <span class="user-info__field-name ">Вес(КГ)*</span>
-              <input class="user-info-control" type="text" name="Имя" placeholder="Барсик">
+              <input class="user-info-control" type="text" name="Имя" placeholder="7">
               </label>
             </li>
             <li class="user-info__item">
               <label class="user-info__field">
                 <span class="user-info__field-name ">Возраст(лет)</span>
-              <input class="user-info-control" type="text" name="Имя" placeholder="Барсик">
+              <input class="user-info-control" type="text" name="Имя" placeholder="7">
               </label>
             </li>
           </ul>
@@ -98,7 +99,7 @@
             <li class="services__item">
               <label class="services__field">
                 <span class="services__control-name">Похудение</span>
-                <input class="services__control" type="radio" name="services-group" value="weight-loss">
+                <input class="services__control" type="radio" name="services-group" value="weight-loss" checked>
               </label>
             </li>
             <li class="services__item">
@@ -121,13 +122,13 @@
             <li class="user-contacts__item">
               <label class="user-contacts__field">
                 <span class="user-contacts__name-field">E-mail:*</span>
-                <input class="user-contacts__entry-field" type="email"  name="user-contacts" value="email" placeholder="kuklachev@gmail.com">
+                <input class="user-contacts__entry-field" type="email"  name="user-contacts"  placeholder="kuklachev@gmail.com">
               </label>
             </li>
             <li class="user-contacts__item">
               <label class="user-contacts__field">
                 <span class="user-contacts__name-field">Телефон:*</span>
-                <input class="user-contacts__entry-field" type="tel"  name="user-contacts" value="tel" placeholder="8 (960) 900-60-90">
+                <input class="user-contacts__entry-field" type="tel"  name="user-contacts"  placeholder="8 (960) 900-60-90">
               </label>
             </li>
           </ul>
@@ -135,7 +136,7 @@
         <fieldset class="main-form__comment">
           <legend class="main-form__comment-title">Комментарий</legend>
           <label class="main-form__comment-field">
-            <textarea class="main-form__comment-entry-field" placeholder="Расскажите обо всех повАдках кота"></textarea>  >
+            <textarea class="main-form__comment-entry-field" placeholder="Расскажите обо всех повадках кота"></textarea>  >
           </label>
         </fieldset>
         <fieldset class="main-form__group-additional group-additional">
@@ -167,7 +168,7 @@
             </li>
           </ul>
         </fieldset>
-        <button class="main-form__send-button">отправить заявку</button>
+        <button class="main-form__send-button button">отправить заявку</button>
         <p class="main-form__explanation">* — Обязательные поля</p>
       </form>
       <section class="contacts">

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Oswald";
-  src: local("Oswald"), url(../../fonts/oswaldmedium.woff2) format("woff2"), url(../../fonts/ArialRegular.woff) format("woff"), url(../../fonts/ArialИщдв.woff) format("woff"), url(../../fonts/oswaldregular.woff2) format("woff2");
+  src: local("Oswald"), url(../../fonts/oswaldmedium.woff2) format("woff2"), url(../../fonts/oswaldregular.woff2) format("woff2"), url(../../fonts/ArialRegular.woff) format("woff"), url(../../fonts/ArialBold.woff) format("woff");
 }
 .page-header {
   background-color: #ffffff;
@@ -95,6 +95,10 @@
   line-height: 18px;
   text-transform: uppercase;
 }
+.button--grey {
+  background-color: #f2f2f2;
+  color: #444444;
+}
 .diets-type__list {
   list-style-type: none;
 }
@@ -145,6 +149,7 @@
   line-height: 20px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .contacts__address {
   line-height: 20px;
@@ -159,11 +164,164 @@
 .site-link__title-first {
   text-transform: uppercase;
 }
+.main-content__catalog-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.main-content__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.main-content__intro {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.catalog__list {
+  list-style-type: none;
+}
+.product-card {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+.product-card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #222222;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.show-more__title {
+  color: #111111;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+.show-more__intro {
+  font-size: 12px;
+  line-height: 16px;
+}
+.additional-goods__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+.additional-goods__list {
+  list-style-type: none;
+}
+.additional-goods__name {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.additional-goods__description {
+  font-size: 14px;
+  line-height: 14px;
+}
+.order-all {
+  background-color: #68B738;
+  background-image: url("../../img/index-background-desktop.jpg");
+  min-height: 289px;
+}
+.order-all__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.main-form__comment {
+  border: none;
+}
+.main-form__comment-title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+.main-form__comment-entry-field {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.main-form__explanation {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}
+.user-info {
+  border: none;
+}
+.user-info__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.user-info-control {
+  text-transform: uppercase;
+}
+.services {
+  border: none;
+}
+.services__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.services__control {
+  text-transform: uppercase;
+}
+.user-contacts {
+  border: none;
+}
+.user-contacts__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.user-contacts__entry-field {
+  text-transform: uppercase;
+  color: #444444;
+}
+.group-additional {
+  border: none;
+  color: #000000;
+}
+.group-additional__title {
+  font-size: 24px;
+  line-height: 20px;
+}
+.group-additional__list {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.group-additional__control {
+  text-transform: uppercase;
+}
+.page-footer {
+  background-color: #f2f2f2;
+}
 .index-body {
   background-color: #ffffff;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: #444444;
+}
+.form-body {
+  background-color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
 }
 .visually-hidden {
   position: absolute;
