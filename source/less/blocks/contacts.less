@@ -4,8 +4,56 @@
   font-family: @title-font;
   text-transform: uppercase;
   font-weight: 700;
+
+  width: 139px;
+
+  @media (min-width: @tablet-width) {
+    width: 171px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 163px;
+  }
 }
 
 .contacts__address {
   line-height: 20px;
+  width: 139px;
+
+  @media (min-width: @tablet-width) {
+    width: 160px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 155px;
+  }
+}
+
+.contacts__address-wrapper {
+  line-height: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 628px;
+    background-color: aqua;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 565px;
+  }
+}
+
+
+.contacts__map {
+  @media (min-width: @tablet-width) {
+    width: @tablet-width;
+  }
+
+  @media (min-width: @desktop-width) {
+
+    width: @desktop-width;
+  }
 }

@@ -1,5 +1,28 @@
 .example-results {
   background-color: #eaeaea;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.example-results__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
 }
 
 .example-results__title {
@@ -7,4 +30,17 @@
   line-height: 40px;
   font-family: @title-font;
   font-weight: 400;
+  color: @title-color;
+
+
+  @media (min-width: @tablet-width) {
+   font-size: 60px;
+   line-height: 60px;
+  }
+}
+
+.example-results__description {
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+   }
 }

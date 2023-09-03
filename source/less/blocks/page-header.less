@@ -4,12 +4,25 @@
 
 .page-header__wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
 
   width: 320px;
 
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width:  @tablet-width;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    width:  @desktop-width;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
 }
 
 .page-header__logo {

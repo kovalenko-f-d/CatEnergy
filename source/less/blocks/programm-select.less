@@ -1,11 +1,22 @@
 .programm-select {
-  background-color: @color-theme;
-  background-image: url("../../img/index-background-desktop.jpg");
+
 }
 
 
 .programm-select__wrapper {
   margin: 0 auto;
+  width: @mobile-width;
+
+  background-color: @color-theme;
+  background-image: url("../img/index-background-desktop.jpg");
+
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1330px;
+  }
 }
 
 .programm-select__title {
@@ -20,6 +31,12 @@
   padding: 0;
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @title-color;
+  }
 }
 
 .programm-select__intro {
@@ -30,8 +47,15 @@
   text-align: center;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @title-color;
+  }
 }
 
 .programm-select__image {
   margin: 0 auto;
 }
+

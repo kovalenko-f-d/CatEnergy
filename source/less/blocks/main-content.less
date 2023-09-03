@@ -5,11 +5,16 @@
   color: @title-color;
 }
 
-.main-content__title {
+.main-content__form-title {
   font-family: @title-font;
   font-size: @page-title-size;
   line-height: 36px;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .main-content__intro {
@@ -18,4 +23,9 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

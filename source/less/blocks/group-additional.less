@@ -1,18 +1,55 @@
 .group-additional{
   border: none;
   color: @title-color;
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
 }
 
 .group-additional__title {
   font-size: 24px;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: @page-title-size;
+    line-height: @page-title-size;
+  }
 }
 
 .group-additional__list {
   list-style-type: none;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 565px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.group-additional__item {
+  @media (min-width: @tablet-width) {
+    width: 280px;
+  }
 }
 
 .group-additional__control {
   text-transform: uppercase;
+}
+
+
+.group-additional__control-title {
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }

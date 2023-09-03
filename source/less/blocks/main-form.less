@@ -2,12 +2,15 @@
   border: none;
 }
 
-
-
 .main-form__comment-title {
   font-size: 24px;
   line-height: 26px;
   color: @title-color;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .main-form__comment-entry-field {
@@ -15,10 +18,62 @@
   line-height: 18px;
   font-family: @title-font;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+
+    width: 628px;
+    min-height: 200px;
+
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    min-height: 174px;
+  }
 }
 
 .main-form__explanation {
   font-size: @main-font-size-mobile;
   line-height: 16px;
   font-family: @main-font;
+}
+
+.main-form__select-program-wrapper {
+  background-color: lightsalmon;
+  @media (min-width: @desktop-width) {
+   width: 1217px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+}
+
+
+.main-form__send-button-wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 565px;
+    background-color: lightblue;
+   }
+
+
+  @media (min-width: @desktop-width) {
+    width: 830px;
+  }
+}
+
+
+.main-form__send-button {
+  @media (min-width: @tablet-width) {
+    width: 568px;
+    min-height: 52px;
+    border: none;
+   }
 }

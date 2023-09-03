@@ -1,3 +1,26 @@
 .catalog__list {
   list-style-type: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 282px;
+
+  width: 282px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    background-color: aquamarine;
+    grid-template-columns: 324px 324px;
+
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width:1220px;
+
+    grid-template-columns: repeat(4, 245px);
+    row-gap: 80px;
+    column-gap: 62px;
+  }
 }
+

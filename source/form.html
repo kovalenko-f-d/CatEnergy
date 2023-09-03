@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -65,57 +66,59 @@
       </div>
     </nav>
   </header>
-  <main class="main-content">
-    <h1 class="main-content__title">Подбор программы</h1>
+  <main class="main-content main-content-form">
+    <h1 class="main-content__form-title">Подбор программы</h1>
     <p class="main-content__intro">Заполните анкету, и мы подберем
       программу питания для вашего кота</p>
       <form class="main-content__form main-form" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="main-form__user-info user-info">
-          <legend class="visually-hidden">Информация о пользователе</legend>
-          <ul class="user-info__list">
-            <li class="user-info__item">
-              <label class="user-info__field">
-                <span class="user-info__field-name">Имя*</span>
-              <input class="user-info-control" type="text" name="Имя" placeholder="Барсик">
-              </label>
-            </li>
-            <li class="user-info__item">
-              <label class="user-info__field">
-                <span class="user-info__field-name ">Вес(КГ)*</span>
-              <input class="user-info-control" type="text" name="Имя" placeholder="7">
-              </label>
-            </li>
-            <li class="user-info__item">
-              <label class="user-info__field">
-                <span class="user-info__field-name ">Возраст(лет)</span>
-              <input class="user-info-control" type="text" name="Имя" placeholder="7">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="main-form__user-info services">
-          <legend class="visually-hidden">Типы диеты</legend>
-          <ul class="services__list">
-            <li class="services__item">
-              <label class="services__field">
-                <span class="services__control-name">Похудение</span>
-                <input class="services__control" type="radio" name="services-group" value="weight-loss" checked>
-              </label>
-            </li>
-            <li class="services__item">
-              <label class="services__field">
-                <span class="services__control-name">Набор массы</span>
-                <input class="services__control" type="radio" name="services-group" value="mass-gain">
-              </label>
-            </li>
-            <li class="services__item">
-              <label class="services__field">
-                <span class="services__control-name">Не знаю (Нужен ваш совет)</span>
-                <input class="services__control" type="radio" name="services-group" value="need-advice">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        <div class="main-form__select-program-wrapper">
+          <fieldset class="main-form__user-info user-info">
+            <legend class="visually-hidden">Информация о пользователе</legend>
+            <ul class="user-info__list">
+              <li class="user-info__item">
+                <label class="user-info__field">
+                  <span class="user-info__field-name">Имя*</span>
+                <input class="user-info-control" type="text" name="Имя" placeholder="Барсик">
+                </label>
+              </li>
+              <li class="user-info__item">
+                <label class="user-info__field">
+                  <span class="user-info__field-name ">Вес(КГ)*</span>
+                <input class="user-info-control" type="text" name="Имя" placeholder="7">
+                </label>
+              </li>
+              <li class="user-info__item">
+                <label class="user-info__field">
+                  <span class="user-info__field-name ">Возраст(лет)</span>
+                <input class="user-info-control" type="text" name="Имя" placeholder="7">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="main-form__user-info services">
+            <legend class="visually-hidden">Типы диеты</legend>
+            <ul class="services__list">
+              <li class="services__item">
+                <label class="services__field">
+                  <span class="services__control-name">Похудение</span>
+                  <input class="services__control" type="radio" name="services-group" value="weight-loss" checked>
+                </label>
+              </li>
+              <li class="services__item">
+                <label class="services__field">
+                  <span class="services__control-name">Набор массы</span>
+                  <input class="services__control" type="radio" name="services-group" value="mass-gain">
+                </label>
+              </li>
+              <li class="services__item">
+                <label class="services__field">
+                  <span class="services__control-name">Не знаю (Нужен ваш совет)</span>
+                  <input class="services__control" type="radio" name="services-group" value="need-advice">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+         </div>
         <fieldset class="main-form__user-contacts user-contacts">
           <legend class="user-contacts__title">Контактные данные (владельца кота)</legend>
           <ul class="user-contacts__list">
@@ -168,8 +171,10 @@
             </li>
           </ul>
         </fieldset>
-        <button class="main-form__send-button button">отправить заявку</button>
-        <p class="main-form__explanation">* — Обязательные поля</p>
+        <div class="main-form__send-button-wrapper">
+          <button class="main-form__send-button button">отправить заявку</button>
+          <p class="main-form__explanation">* — Обязательные поля</p>
+        </div>
       </form>
       <section class="contacts">
         <h2 class="visually-hidden">Наш адрес</h2>
